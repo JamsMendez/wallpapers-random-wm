@@ -6,7 +6,7 @@ while true; do
   export DISPLAY=":0.0"
 
   # images path
-  DIR="/home/USUARIO/Pictures/Wallpapers/release"
+  DIR="/home/USER/Pictures/Wallpapers/release"
 
   if [[ -n "$DISPLAY" ]]; then 
     img=(`find $DIR -name '*' -exec file {} \; | grep -o -P '^.+: \w+ image' | cut -d':' -f1`)
