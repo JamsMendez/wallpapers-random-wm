@@ -1,0 +1,9 @@
+Description=Service wallpapers change random
+
+[Service]
+User=jamsmendez
+Group=jamsmendez
+ExecStart=/home/jamsmendez/.local/bin/wallpapers-random.sh
+
+[Install]
+WantedBy=multi-user.target
