@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-
 # $DISPLAY not found ... try again
 while true; do
   export DISPLAY=":0.0"
@@ -13,6 +12,7 @@ while true; do
     while true; do
       # feh --no-fehbg --bg-fill "${img[$RANDOM % ${#img[@]} ]}"
       feh --bg-fill "${img[$RANDOM % ${#img[@]} ]}"
+      # sleep 30 minites ... change to 15m, 10m, etc
       sleep 30m
     done
   else
