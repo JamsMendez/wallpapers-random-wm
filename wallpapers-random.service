@@ -1,9 +1,10 @@
+[Unit]
 Description=Service wallpapers change random
+After=graphical-session.target
 
 [Service]
-User=USER
-Group=USER
-ExecStart=/home/USER/.local/bin/wallpapers-random.sh
+Type=simple
+ExecStart=/opt/wallpapers-random.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
